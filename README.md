@@ -1,11 +1,6 @@
-Sure, Hasmath! Here's your **cleaned-up and corrected `README.md`** file — ready to copy and paste into your GitHub project. I've fixed formatting issues, completed sections, and added subtle improvements to make it polished and professional.
-
----
-
-````markdown
 # 📝 QuickNote
 
-**QuickNote** is a clean, lightweight Android note-taking app that allows users to easily create, edit, and manage personal notes. Built using Java, the app features a simple UI and reliable local storage using Room Database.
+QuickNote is a clean, lightweight Android note-taking app that allows users to easily create, edit, and manage personal notes. Built using Java, the app features a simple UI and reliable local storage using Room Database.
 
 ---
 
@@ -16,7 +11,7 @@ Sure, Hasmath! Here's your **cleaned-up and corrected `README.md`** file — rea
 - ❌ Delete notes  
 - 📋 Display notes in a RecyclerView  
 - 💾 Local storage using Room database  
-- 🎨 Custom app theme with maroon toolbar  
+- 🎨 Custom app theme  
 
 ---
 
@@ -33,17 +28,17 @@ Sure, Hasmath! Here's your **cleaned-up and corrected `README.md`** file — rea
 
 ## 📸 Screenshots
 
-> *(Insert screenshots here to showcase the UI — e.g., note list screen, add/edit screen, etc.)*
+> app.png
+> add_note.png
+> edit_note.png
+> delete_note.png
 
 ---
 
 ## 📦 How to Run
 
 1. **Clone the repository**
-   ```bash
    git clone https://github.com/HanaShams/QuickNote.git
-   cd QuickNote
-````
 
 2. **Open in Android Studio**
 
@@ -53,46 +48,24 @@ Sure, Hasmath! Here's your **cleaned-up and corrected `README.md`** file — rea
 
 ---
 
-## 📁 Project Structure
-
-```
-QuickNote/
-├── app/
-│   ├── java/com/example/quicknote/
-│   │   ├── MainActivity.java
-│   │   ├── Note.java
-│   │   ├── NoteDao.java
-│   │   ├── NoteDatabase.java
-│   │   ├── NoteRepository.java
-│   │   └── NoteViewModel.java
-│   └── res/
-│       ├── layout/
-│       └── values/
-```
-
----
-
 ## 🎨 Customization
 
-To change the app's toolbar color to **maroon**:
+To change the app's toolbar and status bar color to **maroon** (or any custom color):
 
-1. In `res/values/colors.xml`, add:
+1. In `res/values/colors.xml`, define your color:
 
-   ```xml
-   <color name="maroon">#800000</color>
-   ```
+   <color name="status_bar_color">#800000</color> <!-- Maroon -->
 
 2. In `res/values/themes.xml`, update your app theme:
 
-   ```xml
-   <item name="colorPrimary">@color/maroon</item>
-   <item name="colorPrimaryVariant">@color/maroon</item>
-   <item name="colorOnPrimary">@color/white</item>
-   ```
+  <style name="Base.Theme.QuickNote" parent="Theme.Material3.DayNight.NoActionBar">
+    <item name="colorPrimary">@color/status_bar_color</item>
+    <item name="colorPrimaryContainer">@color/status_bar_color</item>
+    <item name="android:statusBarColor">@color/status_bar_color</item>
+   </style>
 
 3. (Optional) In `MainActivity.java`, set the status bar color:
 
-   ```java
-   getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.maroon));
-   ```
+   getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.status_bar_color));
+
 
