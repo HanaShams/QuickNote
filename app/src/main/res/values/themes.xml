@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.QuickNote" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/status_bar_color</item>
+        <item name="colorPrimaryContainer">@color/status_bar_color</item>
+
+        <!-- Set status bar color -->
+        <item name="android:statusBarColor">@color/status_bar_color</item>
+    </style>
+
+    <style name="Theme.QuickNote" parent="Base.Theme.QuickNote" />
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Add your custom colors for status bar and navigation bar -->
+    <color name="status_bar_color">#6A1E55</color> <!-- Change this to your preferred color -->
+    <color name="navigation_bar_color">#FFFFFFFF</color> <!-- Change this to your preferred color -->
+</resources>
