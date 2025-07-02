@@ -2,8 +2,6 @@
 
 QuickNote is a clean, lightweight Android note-taking app that allows users to easily create, edit, and manage personal notes. Built using Java, the app features a simple UI and reliable local storage using Room Database.
 
----
-
 ## 🚀 Features
 
 - ✍️ Create and save notes  
@@ -12,8 +10,6 @@ QuickNote is a clean, lightweight Android note-taking app that allows users to e
 - 📋 Display notes in a RecyclerView  
 - 💾 Local storage using Room database  
 - 🎨 Custom app theme  
-
----
 
 ## 🛠️ Built With
 
@@ -24,16 +20,12 @@ QuickNote is a clean, lightweight Android note-taking app that allows users to e
 - Material Components  
 - MVVM Architecture (ViewModel + Repository)
 
----
-
 ## 📸 Screenshots
 
 > app.png
 > add_note.png
 > edit_note.png
 > delete_note.png
-
----
 
 ## 📦 How to Run
 
@@ -45,8 +37,6 @@ QuickNote is a clean, lightweight Android note-taking app that allows users to e
 3. **Sync Gradle** (ensure all dependencies download correctly)
 
 4. **Build and run** on an emulator or physical Android device
-
----
 
 ## 🎨 Customization
 
